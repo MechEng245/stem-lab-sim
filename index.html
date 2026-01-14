@@ -1,1 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaCAD (MVP)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>NovaCAD</div>
+        <span class="pill">No paywall • Student-first</span>
+      </div>
+      <nav class="nav">
+        <a href="editor.html">Editor</a>
+        <a href="library.html">Library</a>
+        <a href="learn.html">Learn</a>
+        <a href="settings.html">Settings</a>
+        <a class="btn" href="login.html">Log in</a>
+        <a class="btn primary" href="editor.html">Launch</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <section class="hero">
+      <div class="pill">Web-based 3D creation • Built for classrooms without labs</div>
+      <h1>A modern, browser-based 3D workspace—designed for learning and building.</h1>
+      <p>
+        This is the first presentable version: a clean dashboard, a real 3D viewport, local saving,
+        and a learning section with Teacher Kits. Next steps will add real accounts, cloud saves,
+        and advanced modeling tools.
+      </p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px">
+        <a class="btn primary" href="editor.html">Open the Editor</a>
+        <a class="btn" href="learn.html">Explore Learning</a>
+        <a class="btn" href="library.html">View Saved Designs</a>
+      </div>
+
+      <div class="kpi">
+        <div class="card">
+          <h3>3D Viewport</h3>
+          <p>Orbit/zoom camera + add shapes. This is the foundation for real CAD tools later.</p>
+        </div>
+        <div class="card">
+          <h3>Learning + Teacher Kits</h3>
+          <p>Lesson modules, classroom prompts, and printable kits (MVP pages now).</p>
+        </div>
+        <div class="card">
+          <h3>No Paywall</h3>
+          <p>Free access for students. Long-term plan: sponsorships + grants, not subscriptions.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card" style="grid-column: span 7;">
+          <h3>What’s “presentable” today</h3>
+          <p>
+            A sleek product site + app-like editor layout + saving designs locally.
+            This proves the concept and your vision. Then we expand into accounts, cloud storage,
+            teacher dashboards, and more advanced modeling.
+          </p>
+        </div>
+        <div class="card" style="grid-column: span 5;">
+          <h3>What’s coming next</h3>
+          <p>
+            Real login + cloud saves (Firebase/Supabase), sharing links, classrooms,
+            assignments, and advanced geometry tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      Built as an MVP on GitHub Pages • Designed for expansion into a full platform.
+    </div>
+  </main>
+</body>
+</html>
