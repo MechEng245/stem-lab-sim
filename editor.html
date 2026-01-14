@@ -1,1 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaCAD • Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>NovaCAD</div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a href="learn.html">Learn</a>
+        <a href="settings.html">Settings</a>
+        <a class="btn" href="signup.html">Create account</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="appShell">
+    <aside class="sidebar">
+      <div class="panelTitle">TOOLS</div>
+      <div class="panelBody">
+        <button class="btn primary" id="addCube">Add Cube</button>
+        <button class="btn" id="addSphere">Add Sphere</button>
+        <button class="btn" id="addCylinder">Add Cylinder</button>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Save Design</h3>
+          <input class="input" id="sceneName" placeholder="Name your design (ex: Bridge Lab #1)" />
+          <div class="row" style="margin-top:10px">
+            <button class="btn primary" id="saveScene">Save</button>
+            <button class="btn" id="loadLatest">Load Latest</button>
+          </div>
+          <p class="small" style="margin-top:10px">
+            <span class="badgeWarn">MVP:</span> Saves are on this device only.
+            Cloud saves come later when we add accounts.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 6px">Objects</h3>
+          <div id="objectList" style="display:flex; flex-direction:column; gap:10px"></div>
+          <button class="btn" id="deleteSelected" style="margin-top:10px">Delete Selected</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="canvasWrap">
+      <canvas id="viewport"></canvas>
+      <div class="toast" id="toast">Editor ready.</div>
+    </section>
+
+    <aside class="rightbar">
+      <div class="panelTitle">INSPECTOR</div>
+      <div class="panelBody">
+        <div class="card">
+          <h3 style="margin:0 0 10px">Transform</h3>
+          <div class="row">
+            <input class="input" id="posX" placeholder="X" />
+            <input class="input" id="posY" placeholder="Y" />
+            <input class="input" id="posZ" placeholder="Z" />
+          </div>
+          <div style="margin-top:10px">
+            <label class="small">Scale</label>
+            <input class="input" id="scale" value="1" />
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 10px">Material</h3>
+          <label class="small">Color</label>
+          <input class="input" id="color" type="color" value="#4da3ff" />
+          <p class="small" style="margin-top:10px">
+            Later we’ll add metal/roughness sliders and real feature tools (sketch, extrude, fillet).
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px">Roadmap</h3>
+          <p class="small">
+            Next: account system + cloud saves → classrooms → assignments → advanced modeling.
+          </p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
