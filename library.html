@@ -1,1 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaCAD • Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container inner">
+      <div class="brand"><div class="logo"></div><div>NovaCAD</div></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="editor.html">Editor</a>
+        <a href="learn.html">Learn</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container" style="padding:26px 0;">
+    <h1 style="margin:0 0 8px">Your Library</h1>
+    <p style="margin:0 0 16px; color: var(--muted);">
+      Designs saved on this device (MVP). Later this becomes cloud-synced per account.
+    </p>
+    <div id="libraryList" class="grid" style="grid-template-columns: repeat(12, 1fr);"></div>
+    <div class="toast" id="toast" style="position:fixed; right:14px; bottom:14px; left:auto;">Library ready.</div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
